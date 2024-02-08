@@ -1,0 +1,58 @@
+Lista de Exercícios
+Padrões de Projetos Estruturais - Parte I
+
+
+Resolva cada exercício a seguir usando
+uma linguagem de programação orientada a objetos ou 
+modele usando UML. 
+
+
+----------------------------------------------
+
+1: Implementação Básica do Singleton
+
+Implemente o padrão Singleton para uma classe Configuracao 
+que armazena configurações do sistema, como por exemplo, 
+o tema (claro ou escuro), idioma e tamanho da fonte. Garanta que apenas
+uma instância da classe Configuracao possa existir no programa.
+Demonstre o uso dessa classe acessando a instância singleton para
+alterar e acessar as configurações.
+
+------------------------------------------------
+
+2: Factory Method para Criação de Objetos de Log
+
+Utilizando o padrão Factory Method, crie uma estrutura que
+permita a criação de diferentes tipos de objetos de log 
+(por exemplo, LogArquivo, LogConsole e LogBancoDeDados). 
+Cada tipo de log deve implementar uma interface comum ILog que inclui um 
+método registrar(msg: String). 
+Demonstre como um cliente pode usar o Factory Method para criar diferentes tipos de logs sem conhecer a classe concreta.
+  
+----------------------------------------------
+
+3: Abstract Factory para Compatibilidade de UI
+Imagine que você está desenvolvendo um aplicativo que deve ser 
+compatível tanto com Windows quanto com macOS. 
+Utilize o padrão Abstract Factory para criar 
+famílias de objetos compatíveis sem especificar suas classes concretas. 
+Crie duas fábricas concretas que produzem variantes de dois produtos: 
+Botao, Janela, Cursor, Select e Input. 
+Cada variante deve ser compatível com um dos sistemas operacionais. 
+Demonstre como o código cliente pode utilizar a fábrica para criar produtos compatíveis 
+com o sistema operacional em uso.
+
+-----------------------------------------------------
+
+4: Combinação de Padrões: Abstract Factory com Singleton
+
+Considere que você está desenvolvendo um framework de 
+renderização de gráficos que deve suportar diferentes 
+bibliotecas gráficas (por exemplo, OpenGL, DirectX). 
+Use o padrão Abstract Factory para definir uma interface 
+comum para criar famílias de objetos relacionados à renderização 
+(como renderizadores de texturas, sombras e modelos). Em seguida, 
+implemente cada fábrica concreta como um Singleton para garantir que 
+apenas uma instância de cada fábrica seja usada durante a execução 
+do programa. Demonstre como um cliente pode usar esses padrões 
+combinados para acessar recursos de renderização.
