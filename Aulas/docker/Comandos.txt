@@ -1,0 +1,12 @@
+docker ps                                       // Lista os containers abertos
+docker ps -a                                    // Lista todos os containers
+--it                                            // Prende o terminal e permitir digitar comandos
+--rm                                            // Remove o container após o uso
+-p 8080:80                                      // Redireciona a porta 8080 da minha máquina para aporta 80 do container
+-d                                              // Permiti sair do terminal sem matar o processo
+docker rm id_do_conatiner                       // Remove o container
+docker rm -f                                    // Força a remoção do container
+--name                                          // Nomeia o container
+exec nomeContainer ls                           // Executa um comando no container (no exemplo é executado o ls)
+-v caminho_maquina:caminho_docker               // Adiciona um volume ao container para persistir os arquivos(comando antigo)
+--mount type=bind,source=caminho_maquina        // Adiciona um volume ao container para persistir os arquivos(comando novo)    
